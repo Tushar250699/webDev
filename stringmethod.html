@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String Method
+        let str="hello"
+        console.log(str.length);
+        //Slice()
+        console.log(str.slice(1,3));
+
+        //toUpperCase():TO CONVERT THE STRING INTO UPPERCASE
+
+        let str2="uppercase"
+        console.log(str2.toUpperCase());
+
+        //toLowerCase(): TO CONVERT THE STRING INTO LOWERCASE
+         let str3="LOWERCASE"
+         console.log(str3.toLowerCase());
+
+
+         //concat()
+
+         let con1="Tushar"
+         let con2="Patil"
+         console.log(con1+con2);
+         console.log(con1.concat(con2));
+
+         //charAt(index): It is used to cheched the character with the help of its Index
+         let char="charAt"
+         console.log(char.charAt(4));
+
+         //char AtCode(INDEX); It is used to check the character ASCII Value
+         let char1="charAtcode"
+         console.log(char1.charCodeAt(2));
+
+         //replace:  It is used to replace the String by using new String
+
+         let journey="pune to goa"
+         console.log(journey.replace("pune","Mumbai"));
+
+         //repeat(count): it is used to repeat the String..
+         console.log(journey.repeat(5));
+
+         // startWith
+
+         let start="startwith"
+         console.log(start.startsWith("S"));//false
+         console.log(start.startsWith("s"));//true
+
+
+         //endWith()
+         let end="endwith"
+         console.log(end.endsWith("H"));//false
+         console.log(end.endsWith("h"));//true
+
+
+         //trim()// it is used to remove the whitespaceo
+         let trim1="  trim"
+         console.log(trim1);
+         console.log(trim1.length);
+         console.log(trim1.trim());
+
+
+         //trimEnd() : it is used to removed the wide Space of String from  end..
+
+         let trim2='trimend '
+         console.log(trim2);
+         console.log(trim2.trimEnd());
+
+         //trimStart():it is used to removed the wideSpace of String from start
+
+         let trim3="  trimStart"
+         console.log(trim3);
+         console.log(trim3.trimStart());
+
+         //subStr( st.index,last Index)
+         let substr="substr"
+         console.log(substr.substr(1,3));
+
+         let slice1="java script"
+         console.log(slice1.slice(-4));
+
+         //include()
+
+         let inclu="includes"
+         console.log(inclu.includes("f"));
+
+
+         //indexOf()
+        
+         let inde="indexOf"
+         console.log(inde.indexOf("x"));
+        
+    </script>
+</body>
+</html>

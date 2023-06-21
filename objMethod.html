@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            key1: "value1",
+            key2: "value2"
+        }
+        // //add(): IT IS USED TO ADD AN ELEMENT..
+        obj.key3 = "value3"
+        console.log(obj);
+
+        obj.key4 = "value4"
+        console.log(obj);
+        // //freeze(): IT IS USED TO FREEZE THE OBJ IT MEANS THAT WE CANT UPDATE..
+        //OR MODIFY AN OBJECT
+        console.log(Object.freeze(obj));
+        obj.key5 = "value5"
+        console.log(obj);
+
+
+
+        // seal1:IT IS USED TO SEAL THE OBJECT BUT WE CAN MODIFY AN EXISTING ELEMENT..
+        let seal1 = {
+            name: "seal",
+            type: "object method"
+        }
+        console.log(Object.seal(seal1));
+        seal1.key3 = "value"
+        console.log(seal1);
+        seal1.name = "seal"
+        console.log(seal1);
+
+
+        //delete: IT IS USED TO DELETE AN ELEMENT..
+        delete seal1.name
+        console.log(seal1);
+
+        // entries(): IT IS USED TO CONVERT AN OBJECT INTO  AN ARRAY..
+        let ent = {
+            name: "apple",
+            type: "fruit",
+            color: "red"
+        }
+        console.log(ent);
+        console.log(Object.entries(ent));
+
+        // values(): IT IS USED TO FETCHING THE VALUES OF AN OBJECT.
+        console.log(Object.values(ent));
+
+        //keys(): IT IS USED TO FETCHING THE KEYS OF SN OBJECT
+        console.log(Object.keys(ent))
+
+        //assign(): IT IS USED TO MERGED  THE  MORE THAN ONE OBJECT.
+        let obj1 = {
+            name: "abc",
+            age: 55
+        }
+        let obj2 = {
+            bgroup: "AB+",
+            contact: 1234,
+            name: "xyz"
+        }
+        console.log(Object.assign(obj1, obj2));
+    </script>
+</body>
+
+</html>
